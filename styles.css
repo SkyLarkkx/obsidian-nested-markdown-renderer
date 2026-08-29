@@ -1,0 +1,35 @@
+.nmr-hidden-table-line {
+	display: none !important;
+}
+
+.cm-line.nmr-table-host-line {
+	--nmr-effective-indent: min(var(--nmr-table-indent, 0ch), 30%);
+	padding-inline-start: var(--nmr-effective-indent) !important;
+	text-indent: 0 !important;
+}
+
+.nmr-table-widget {
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: auto;
+	padding-block: var(--size-2-1, 4px);
+	text-indent: 0;
+	vertical-align: top;
+}
+
+.nmr-table-widget:has(.lookout-table-scroll) {
+	overflow: visible;
+}
+
+.nmr-table-widget > table {
+	width: max-content;
+	min-width: 100%;
+	margin-block: 0;
+}
+
+.nmr-table-widget.nmr-render-error > pre {
+	margin: 0;
+	white-space: pre-wrap;
+}
