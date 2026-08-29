@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-nested-markdown-renderer",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Render nested GFM tables and repair indented callouts in Obsidian Live Preview.",
 	"main": "main.js",
 	"type": "module",

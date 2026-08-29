@@ -39,6 +39,7 @@ void test('finds a nested table and dedents markdown', () => {
 	const tables = scanIndentedTables(doc);
 	assert.equal(tables.length, 1);
 	assert.equal(tables[0]?.indentColumns, 4);
+	assert.equal(tables[0]?.contentFrom, tables[0]?.from + 1);
 	assert.equal(
 		tables[0]?.markdown,
 		'Feature | Result\n:--- | ---:\nA\\|B | 100',

@@ -1,11 +1,7 @@
-.nmr-hidden-table-line {
-	display: none !important;
-}
-
-.cm-line.nmr-table-host-line {
-	--nmr-effective-indent: min(var(--nmr-table-indent, 0ch), 30%);
-	padding-inline-start: var(--nmr-effective-indent) !important;
-	text-indent: 0 !important;
+.markdown-source-view.mod-cm6
+	.cm-content
+	> .cm-line.nmr-hidden-table-line {
+	display: none;
 }
 
 .nmr-table-widget {
@@ -15,12 +11,7 @@
 	max-width: 100%;
 	overflow-x: auto;
 	padding-block: var(--size-2-1, 4px);
-	text-indent: 0;
 	vertical-align: top;
-}
-
-.nmr-table-widget:has(.lookout-table-scroll) {
-	overflow: visible;
 }
 
 .nmr-table-widget > table {

@@ -38,15 +38,7 @@ export function buildTableDecorations(
 		ranges.push(
 			Decoration.replace({
 				widget: new NestedTableWidget(app, table, path),
-			}).range(table.from, view.state.doc.line(table.startLine).to),
-		);
-		ranges.push(
-			Decoration.line({
-				class: 'nmr-table-host-line',
-				attributes: {
-					style: `--nmr-table-indent: ${table.indentColumns}ch`,
-				},
-			}).range(table.from),
+			}).range(table.contentFrom, view.state.doc.line(table.startLine).to),
 		);
 
 		for (

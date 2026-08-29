@@ -152,11 +152,12 @@ export function scanIndentedTables(doc: Text): TableBlock[] {
 			markdown.push(doc.line(row).text.slice(indent.length));
 		}
 
-		tables.push({
-			startLine: number,
-			endLine,
-			from: line.from,
-			to: doc.line(endLine).to,
+			tables.push({
+				startLine: number,
+				endLine,
+				from: line.from,
+				contentFrom: line.from + indent.length,
+				to: doc.line(endLine).to,
 			indentColumns: indentWidth,
 			markdown: markdown.join('\n'),
 		});

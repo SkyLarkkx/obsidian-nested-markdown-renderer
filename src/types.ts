@@ -7,6 +7,7 @@ export interface TableBlock {
 	startLine: number;
 	endLine: number;
 	from: number;
+	contentFrom: number;
 	to: number;
 	indentColumns: number;
 	markdown: string;
