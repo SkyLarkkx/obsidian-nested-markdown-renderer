@@ -48,7 +48,15 @@ Indented callouts use normal Obsidian syntax:
 
 ## Installation
 
-### BRAT beta
+### Community directory
+
+1. Open **Settings → Community plugins** in Obsidian.
+2. Select **Browse** and search for **Nested Markdown Renderer**.
+3. Install and enable the plugin.
+
+You can also open the listing directly: [Add to Obsidian](https://obsidian.md/plugins?id=nested-markdown-renderer).
+
+### BRAT
 
 1. Install the [BRAT](https://obsidian.md/plugins?id=obsidian42-brat) plugin.
 2. Run **BRAT: Add a beta plugin for testing**.
@@ -60,8 +68,6 @@ Indented callouts use normal Obsidian syntax:
 1. Download `main.js`, `manifest.json`, and `styles.css` from the latest GitHub release.
 2. Place them in `<vault>/.obsidian/plugins/nested-markdown-renderer/`.
 3. Reload Obsidian and enable **Nested Markdown Renderer**.
-
-Community directory installation will be added after the initial review.
 
 ## Compatibility
 
